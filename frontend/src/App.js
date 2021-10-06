@@ -14,8 +14,8 @@ function App() {
         <header  class="row">
             <div><a class="brand" href="/">AFRICAN-Wears</a></div>
             <div>
-                <a href="/Cart">Cart</a>
-                <a href="/signin">Sign In</a>
+                <a href="/Cart">Cart</a> 
+                <a href="/signin">Sign In</a> 
             </div>
         </header>
         <main>
