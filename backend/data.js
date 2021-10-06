@@ -4,11 +4,12 @@ const data = {
             _id: '1',
             name: 'African wdar1',
             category: 'gown',
-            image: './images/p1.jpg',
+            image: './images/d1.jpg',
             price: 35000 ,
             brand: 'gowny',
             rating: 4.5,
             numReviews: 7,
+            countInStock: 5,
             decription: 'high quality product'
         },
          {
@@ -20,7 +21,8 @@ const data = {
             brand: 'gowny',
             rating: 4.5,
             numReviews: 12,
-            decription: 'high quality product'
+            countInStock: 2,
+            description: 'high quality product'
         },
          {
             _id: '3',
@@ -31,7 +33,8 @@ const data = {
             brand: 'gowny',
             rating: 4.5,
             numReviews: 10,
-            decription: 'high quality product'
+            countInStock: 25,
+            description: 'high quality product'
         },
          {
             _id: '4',
@@ -42,7 +45,8 @@ const data = {
             brand: 'gowny',
             rating: 4.5,
             numReviews: 10,
-            decription: 'high quality product'
+            countInStock: 5,
+            description: 'high quality product'
         },
          {
             _id: '5',
@@ -53,7 +57,8 @@ const data = {
             brand: 'gowny',
             rating: 4.5,
             numReviews: 10,
-            decription: 'high quality product'
+            countInStock: 5,
+            description: 'high quality product'
         },
          {
             _id: '6',
@@ -63,8 +68,9 @@ const data = {
             price: 35000,
             brand: 'gowny',
             rating: 4.5,
+            countInStock: 5,
             numReviews: 50,
-            decription: 'high quality product'
+            description: 'high quality product'
         },
     ],
 }
