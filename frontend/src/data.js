@@ -57,7 +57,7 @@ const data = {
             brand: 'gowny',
             rating: 4.5,
             numReviews: 10,
-            countInStock: 10,
+            countInStock: 0,
             description: 'high quality product'
         },
          {
