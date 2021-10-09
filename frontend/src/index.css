@@ -150,7 +150,7 @@ img {
   border-radius: 0.5rem;
 }
 img.small {
-  max-width: 20rem;
+  max-width: 10rem;
   width: 100%;
 }
 img.medium {

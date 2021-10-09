@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import  { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom';
-import { addToCart } from '../actions/cartAction';
+import { addToCart, removeFromCart } from '../actions/cartAction';
 import MessageBox from '../components/MessageBox';
 
 function CartScreen(props) {
@@ -20,6 +20,10 @@ const  dispatch = useDispatch()
     }, [dispatch, productId,qty]);
     const removeFromCartHandler = (id) => {
         // delete  action
+        dispatch(removeFromCart(id));
+    }
+    const checkoutHandler = () => {
+        props.history.push('/signin?redirect=shipping');
     }
 
     return (
@@ -45,8 +49,9 @@ const  dispatch = useDispatch()
                             </div>
                             <div>
                                 <select value={item.qty} onChange ={(e) => dispatch(
-                                    addToCart(item.product), 
-                                    Number(e.target.value))}>
+                                    addToCart(item.product,  Number(e.target.value))
+                                    ) 
+                                   }>
                                     {[...Array(item.countInStock).keys()].map((x) =>(
                                         <option key={x+1} value={x+1}>
                                             {x+1}
@@ -54,19 +59,32 @@ const  dispatch = useDispatch()
                                     ))}
                                 </select>
                             </div>
-                            <div>${item.price}</div>
+                            <div>{item.price}FCFA</div>
                             <button type="button" onClick={() =>removeFromCartHandler(item.product)}>Delete</button>
                         </div>
                         </li>
                     ))
                 }
                 </ul>
-            )
-        }
+            )}
         </div>
-            
+            <div className="col-1">
+                <div className="card card-body">
+                    <ul>
+                        <li>
+                            <h2>
+                                Subtotal ({cartItems.reduce((a, c) => a + c.qty, 0)} items) : {cartItems.reduce((a, c) => a + c.price*c.qty, 0)}FCFA
+                            </h2>
+                        </li>
+                        <li>
+                            <button type="button" onClick={checkoutHandler} className="primary block" disabled={cartItems.length === 0}>
+                                Proceed to Checkout  
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    )
-}
+    )};
 
 export default CartScreen
