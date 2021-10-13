@@ -14,7 +14,7 @@ The website is for you to get/buy all types of African Wears to promote your Cul
   * Install  [Click here to download](https://www.mongodb.com/try/download/community "Community Version")
   * Create .env file in root folder
   * Set MONGODB_URL=mongodb://localhost/africanwearstore
-* use postman
+
 
 3. ## Run Backend
 
