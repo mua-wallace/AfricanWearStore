@@ -29,7 +29,7 @@ body{
 }
 header {
   grid-area: header;
-  background-color: #3ec486;
+  background-color: #c48e3e;
 }
 main {
   grid-area: main;
@@ -97,7 +97,7 @@ button:hover {
 }
 
 button.primary {
-  background-color: #f0c040;
+  background-color: #7540f0;
 }
 button.block {
   width: 100% ;
@@ -205,4 +205,40 @@ img.large {
 .alert-danger {
   color: #a02020;
   background-color: #ffe0e0e0;
+}
+/* Form */
+.form {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.form > div {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+} 
+.form label {
+  margin: 1rem;
+  display: block;
+}
+
+/*  Dropdown*/
+.dropdown {
+  display: inline;
+  position: relative;
+}
+.dropdown-content {
+  position: absolute;
+  display: none;
+  right: 0;
+  min-width: 12rem;
+  padding: 1rem;
+  z-index: 1;
+  background-color: #f0c040;
+  margin: o;
+  margin-top: 0.4rem;
+  border-radius: 0.5rem;
+}
+.dropdown:hover  .dropdown-content{
+  display: block;
+
 }
