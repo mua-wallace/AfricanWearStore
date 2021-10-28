@@ -49,7 +49,7 @@ userRouter.get('/seed',
                         name: createdUser.name,
                         email: createdUser.email,
                         isAdmin: createdUser.isAdmin,
-                        token:generateToken(user),
+                        token:generateToken(createdUser),
                     });
         })
     );
