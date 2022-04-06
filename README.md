@@ -7,20 +7,6 @@ The website is for you to get/buy all types of African Wears to promote your Cul
 - ``` git clone https://github.com/mua-wallace/AfricanWearStore.git ```
 
 
-  - ``` $myPayment = new PayUnit(
-      "your_api_key",
-      "your_api_password",
-      "your_api_username",
-      "returnUrl",
-      "notifyUrl",
-      "mode",
-      "description",
-      "purchaseRef",
-      "currency",
-      "merchant_name",
-      "transaction_id (This id should be alpha numeric and less than 20 characters)"
-    );  
-
 - ```cd AfricanWearStore ```
 
 2. ## Setup MongoDB
@@ -33,7 +19,7 @@ The website is for you to get/buy all types of African Wears to promote your Cul
 
 3. ## Run Backend
 
-- ``` open new terminal ```
+-  puts ``` open new terminal ```
 
 - ``` npm install ```
 
